@@ -1,4 +1,3 @@
-
 // Dependencies
 const express = require('express');
 const app = express();
@@ -38,6 +37,12 @@ app.use('/users', userController);
 const sessionsController = require('./controllers/sessions');
 app.use('/sessions', sessionsController);
 
+const addProductController = require('./controllers/products');
+app.use('/product', addProductController);
+
+
+
+
 
 app.get('/', (req, res) => {
 	if (req.session.currentUser) {
@@ -52,8 +57,6 @@ app.get('/', (req, res) => {
 });
 
 
-const addProductController = require('./controllers/newProduct.js');
-app.use('/product', addProductController);
 
 
 // Listener
