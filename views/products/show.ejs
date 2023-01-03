@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wish</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <h1><%= product.title %></h1>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li>Link: <%= product.link %></li>
+                <li>Store: <%= product.store %></li>
+                <li>tags: <%= product.tags %></li>
+                <li>wishlist: <%= product.wishList %></li>
+                <img src="<%= product.imageLink%>" alt="product image">
+            </ul>
+        </section>
+        <section>
+            <form action="/product/<%= product._id %>?_method=DELETE" method="POST">
+                <input type="submit" value="Delete Product" />
+            </form>
+            <a href="/product/<%= product._id %>/edit">Edit</a>
+        </section>
+    </main>
+</body>
+
+</html>

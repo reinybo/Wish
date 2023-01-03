@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Wish</title>
+</head>
+
+<body>
+	<header>
+		<h1>Edit <%= product.title %>'s Info</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/product">Articles Index</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Product Attributes:</h2>
+		<form action="/product/<%= product._id %>?_method=PUT" method="POST">
+			Link to item:: <input type="text" name="link" value="<%= product.link %>" /><br />
+			Item title: <input type="text" name="title" value="<%= product.title %>" /><br />
+			Store: <input type="text" name="store" value="<%= product.store %>" /><br />
+			Image Link: <input type="text" name="imageLink" value="<%= product.imageLink %>" /><br />
+			Tags: <input type="text" name="tags" value="<%= product.tags %>" /><br />
+			Wishlist: <input type="text" name="wishlist" value="<%= product.wishList %>" /><br />
+            <input type="submit" value="Update Product" />
+		</form>
+	</main>
+</body>
+
+</html>

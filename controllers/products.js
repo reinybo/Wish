@@ -20,5 +20,51 @@ router.get('/new', (req, res) => {
     });
 });
 
+//DELETE
+router.delete('/:id', (req, res) => {
+	Product.findByIdAndRemove(req.params.id, () => {
+		res.redirect('/product');
+	});
+});
+
+
+//UPDATE
+router.put('/:id', (req, res) => {
+	Product.findByIdAndUpdate(req.params.id, req.body, () => {
+		res.redirect('/product');
+	});
+});
+
+
+
+//CREATE
+router.post('/', (req, res) => {
+    Product.create(req.body, (err, createdProduct) => {
+        res.redirect('/product');
+    });
+});
+
+
+//EDIT
+
+router.get('/:id/edit', (req, res) => {
+	Product.findById(req.params.id, (err, foundProduct) => {
+		res.render('products/edit.ejs', {
+			product: foundProduct
+		});
+	});
+});
+
+
+// //SHOW
+router.get('/:id', (req, res) => {
+    Product.findById(req.params.id, (err, foundProduct) => {
+		res.render('products/show.ejs', {
+			product: foundProduct,
+		})
+    });
+});
+
+
 
 module.exports=router;
