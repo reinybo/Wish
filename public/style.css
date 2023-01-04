@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@100;300&display=swap');
+
+
+
+body {
+    background-color: rgb(255, 191, 175);
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+input[type='button'] {
+    background-color: rgb(255, 151, 151);
+    color: white;
+    border: none;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#topLinks {
+    display:inline;
+    text-align: left;
+}
+
+input {
+    color: black
+}
+
+.scrolling-products {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+  
+.itemDisplay {
+      display: inline-block;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}  
+.card {
+    display: inline-block;
+}
+
+a{
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 151, 151);
+  }

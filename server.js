@@ -5,6 +5,8 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const session = require('express-session');
 const methodOverride = require('method-override');
+const Product = require('./models/product.js');
+
 
 // Database Configuration
 mongoose.connect(process.env.DATABASE_URL, {
@@ -22,6 +24,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // Middleware
 // Body parser middleware: give us access to req.body
 app.use(methodOverride('_method'));
+app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 app.use(
     session({
@@ -37,8 +40,13 @@ app.use('/users', userController);
 const sessionsController = require('./controllers/sessions');
 app.use('/sessions', sessionsController);
 
-const addProductController = require('./controllers/products');
-app.use('/product', addProductController);
+const productController = require('./controllers/products');
+app.use('/product', productController);
+
+const wishlistController = require('./controllers/wishlist');
+app.use('/wishlist', wishlistController);
+
+
 
 
 
@@ -46,9 +54,11 @@ app.use('/product', addProductController);
 
 app.get('/', (req, res) => {
 	if (req.session.currentUser) {
-		res.render('dashboard.ejs', {
-			currentUser: req.session.currentUser
-		});
+        Product.find({}, (err, foundProducts) => {
+            res.render('dashboard.ejs', {
+                products: foundProducts,             
+			    currentUser: req.session.currentUser
+        })});
 	} else {
 		res.render('index.ejs', {
 			currentUser: req.session.currentUser

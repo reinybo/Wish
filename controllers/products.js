@@ -31,7 +31,7 @@ router.delete('/:id', (req, res) => {
 //UPDATE
 router.put('/:id', (req, res) => {
 	Product.findByIdAndUpdate(req.params.id, req.body, () => {
-		res.redirect('/product');
+		res.redirect('/product/'+req.params.id);
 	});
 });
 
@@ -56,7 +56,7 @@ router.get('/:id/edit', (req, res) => {
 });
 
 
-// //SHOW
+//SHOW
 router.get('/:id', (req, res) => {
     Product.findById(req.params.id, (err, foundProduct) => {
 		res.render('products/show.ejs', {

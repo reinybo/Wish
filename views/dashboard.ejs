@@ -5,15 +5,43 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/skeleton.css" />
+    <link rel="stylesheet" href="/style.css" />
 	<title>WishList</title>
 </head>
 
 <body>
-	<%- include('./partials/nav.ejs')  %>
 	<h1>Dashboard</h1>
-    <br>
-    <a href="/product/new">Click to add a new item!</a><br>
-    <a href="/product">Click to view all items</a>
+
+    <form>
+        <input type="button" onclick="window.location.href='/product/new';" value="New item" />
+        <input type="button" onclick="window.location.href='/product';" value="View All Items" />
+    </form>
+
+    <% let wishListArray = []; %>
+    <% products.forEach(p => { %> 
+        <% if(wishListArray.indexOf(p.wishList)=== -1) {%>
+            <% wishListArray.push(p.wishList) }%>  
+    <% }) %>  
+    
+    <% console.log(wishListArray) %> 
+    
+    <% wishListArray.forEach(w => { %> 
+        <h3> <%= w %></h3>
+        <div class="scrolling-wrapper">
+                <% products.forEach(p => { %> 
+                    <% if(p.wishList === w) {%>
+                            <div class="card"><h6><a href="/product/<%= p._id %>"><%= p.title %></a></h6><a href="/product/<%= p._id %> "><img src="<%= p.imageLink %>" alt="product image"></a></div>
+                    <% } %>
+                <% }) %> 
+        </div> 
+    <%}) %> 
+
+
+
+
+
 </body>
 
 </html>
