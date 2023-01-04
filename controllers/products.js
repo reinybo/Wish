@@ -46,7 +46,6 @@ router.post('/', (req, res) => {
 
 
 //EDIT
-
 router.get('/:id/edit', (req, res) => {
 	Product.findById(req.params.id, (err, foundProduct) => {
 		res.render('products/edit.ejs', {
@@ -64,6 +63,19 @@ router.get('/:id', (req, res) => {
 		})
     });
 });
+
+
+// Wishlist Routing/Controllers
+
+//SHOW
+router.get('/wishlist/:name', (req, res) => {
+	Product.find({wishList: req.params.name}, (err, wishlistProducts) => {
+		res.render('wishLists/show.ejs', {
+			wishlistProducts
+		});
+	});
+});
+
 
 
 

@@ -36,16 +36,8 @@ input {
     white-space: nowrap;
 }
   
-.itemDisplay {
-      display: inline-block;
-}
 
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}  
-.card {
+.dashboardItem {
     display: inline-block;
 }
 
@@ -60,3 +52,18 @@ a:link {
 a:hover {
     color: rgb(255, 151, 151);
   }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 15px;
+    max-width: 100vh;
+    overflow-x: visible;
+}
+
+.galleryItems {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/skeleton.css" />
+    <link rel="stylesheet" href="/style.css" />
+	<title>WishList</title>
+</head>
+
+<body>
+
+    <h1><%= wishlistProducts[0].wishList %> </h1>
+
+    <div class="gallery">
+        <% wishlistProducts.forEach(p => { %> 
+            <div class='galleryItems'>
+                <h6><a href="/product/<%= p._id %>"><%= p.title %></a></h6>
+                <a href="/product/<%= p._id %> "><img src="<%= p.imageLink %>" alt="product image"></a>
+            </div>
+        <% }) %> 
+    </div>  
+</body>
+</html>
