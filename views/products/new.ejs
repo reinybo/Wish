@@ -27,9 +27,20 @@
             Store: <input type="text" name="store"> <br>
             Image Link: <input type="url" name="imageLink"> <br>
             Tags: <input type="text" name="tags"> <br>
-            Wishlist<input type="checkbox" name="wishList"> <br>
+            Wishlist: <input list="wishLists" name="wishList">
+            <br>
             <input type="submit" value="Create"> <br>
         </form>
     </main>
 </body>
+
+
+<datalist id="wishLists">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+
 </html>
