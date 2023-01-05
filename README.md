@@ -17,19 +17,24 @@ Wishlist makes it easy to keep track of everything you are thinking about purcha
 
 ## Screenshots
 
-<a href="https://ibb.co/MhnrGZ8"><img src="https://i.ibb.co/H276xBN/Screen-Shot-2022-12-07-at-10-02-29-PM.png" alt="Screen-Shot-2022-12-07-at-10-02-29-PM" border="0"></a>
-<a href="https://ibb.co/Dzr80t3"><img src="https://i.ibb.co/zQ67qrK/Screen-Shot-2022-12-07-at-10-02-47-PM.png" alt="Screen-Shot-2022-12-07-at-10-02-47-PM" border="0"></a>
-<a href="https://ibb.co/RHYp5n0"><img src="https://i.ibb.co/dKj0h92/Screen-Shot-2022-12-07-at-10-03-10-PM.png" alt="Screen-Shot-2022-12-07-at-10-03-10-PM" border="0"></a>
-<a href="https://ibb.co/kDf8LmG"><img src="https://i.ibb.co/M14VzBg/Screen-Shot-2022-12-07-at-10-03-21-PM.png" alt="Screen-Shot-2022-12-07-at-10-03-21-PM" border="0"></a>
-<a href="https://ibb.co/qmst2kq"><img src="https://i.ibb.co/zPRytG9/Screen-Shot-2022-12-07-at-10-03-34-PM.png" alt="Screen-Shot-2022-12-07-at-10-03-34-PM" border="0"></a>
-<a href="https://ibb.co/5YXR2LW"><img src="https://i.ibb.co/CJpHWQ5/Screen-Shot-2022-12-07-at-10-03-39-PM.png" alt="Screen-Shot-2022-12-07-at-10-03-39-PM" border="0"></a>
+<a href="https://ibb.co/4VPPCMj"><img src="https://i.ibb.co/TgmmJRH/Screen-Shot-2023-01-04-at-9-30-44-PM.png" alt="Screen-Shot-2023-01-04-at-9-30-44-PM" border="0"></a>
+<a href="https://ibb.co/sm6Tgym"><img src="https://i.ibb.co/HFxcKnF/Screen-Shot-2023-01-04-at-9-35-57-PM.png" alt="Screen-Shot-2023-01-04-at-9-35-57-PM" border="0"></a>
+<a href="https://ibb.co/XbTRT06"><img src="https://i.ibb.co/s2rYrxc/Screen-Shot-2023-01-04-at-9-38-27-PM.png" alt="Screen-Shot-2023-01-04-at-9-38-27-PM" border="0"></a>
+<a href="https://ibb.co/TTrxtvr"><img src="https://i.ibb.co/FWnLzxn/Screen-Shot-2023-01-04-at-9-39-03-PM.png" alt="Screen-Shot-2023-01-04-at-9-39-03-PM" border="0"></a>
+<a href="https://ibb.co/JxTKq42"><img src="https://i.ibb.co/B4JtGxj/Screen-Shot-2023-01-04-at-9-39-14-PM.png" alt="Screen-Shot-2023-01-04-at-9-39-14-PM" border="0"></a>
+<a href="https://ibb.co/bX7MTqB"><img src="https://i.ibb.co/1Tbt1hq/Screen-Shot-2023-01-04-at-9-48-36-PM.png" alt="Screen-Shot-2023-01-04-at-9-48-36-PM" border="0"></a>
+<a href="https://ibb.co/HBkc0Fd"><img src="https://i.ibb.co/xXRnyCH/Screen-Shot-2023-01-04-at-9-48-53-PM.png" alt="Screen-Shot-2023-01-04-at-9-48-53-PM" border="0"></a>
+<a href="https://ibb.co/LZXPBZH"><img src="https://i.ibb.co/BC5PvCF/Screen-Shot-2023-01-04-at-9-49-31-PM.png" alt="Screen-Shot-2023-01-04-at-9-49-31-PM" border="0"></a>
+<a href="https://ibb.co/jg5XmgP"><img src="https://i.ibb.co/hDMzbDJ/Screen-Shot-2023-01-04-at-9-49-57-PM.png" alt="Screen-Shot-2023-01-04-at-9-49-57-PM" border="0"></a>
 
 ## Getting Started
 
-To launch Adogtable click [here:](https://adogtable.vercel.app/)
+To launch Wishlist click [here:](https://reinys-wish.herokuapp.com/)
 
 
 ## Future Enhancements 
 
-I hope to continue working on Adoptable--particularly, I hope to include more drop-down menus of dog traits in the side bar. I also wish to work out a few kinks with regards to the need to refresh the page for every new search. I also would like the user to be able to select only some filters instead of all. I also would like to work on the CSS to make visual aspects of the website more appealing. 
+In the future, there are a few features I would like to add. Firstly, I would like to be able to filter/sort the items by price, tag, store, etc.. Additionally, I would like the user to input the link to the item which will trigger the other inputs to auto-populate with likely values retreived from the given link. I also want the user to be notified of pricedrops of items on their wishlists, and lastly, I would like their to be a space for suggesting items that the user might also like. 
+
+
 
