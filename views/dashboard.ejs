@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <%- include('./partials/nav.ejs')  %>
+
 	<h1>Dashboard</h1>
 
     <form>
@@ -22,17 +24,16 @@
     <% let wishListArray = []; %>
     <% products.forEach(p => { %> 
         <% if(wishListArray.indexOf(p.wishList)=== -1) {%>
-            <% console.log(p.wishList) %> 
             <% wishListArray.push(p.wishList) }%>  
     <% }) %>  
     
     
     <% wishListArray.forEach(w => { %> 
-        <h3><a href="/product/wishlist/<%= w %>"><%= w %></a></h3>
+        <h3><a href="/product/wishlist/<%= w %>"><%= w %> wishlist</a></h3>
         <div class="scrolling-products">
                 <% products.forEach(p => { %> 
                     <% if(p.wishList === w) {%>
-                            <div class="dashboardItem"><h6><a href="/product/<%= p._id %>"><%= p.title %></a></h6><a href="/product/<%= p._id %> "><img src="<%= p.imageLink %>" alt="product image"></a></div>
+                            <div class="dashboardItem"><h6><a class='dashboard-titles' href="/product/<%= p._id %>"><%= p.title %></a></h6><a href="/product/<%= p._id %> "><img class='dashboard-images' src="<%= p.imageLink %>" alt="product image"></a></div>
                     <% } %>
                 <% }) %> 
         </div> 

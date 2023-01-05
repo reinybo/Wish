@@ -21,10 +21,11 @@ input[type='button'] {
     font-family: 'Abril Fatface', cursive;
 }
 
-#topLinks {
-    display:inline;
-    text-align: left;
+input[type='button']:hover {
+    color: white;
 }
+
+
 
 input {
     color: black
@@ -36,9 +37,17 @@ input {
     white-space: nowrap;
 }
   
+h3 {
+    margin-top: 50px;
+}
 
 .dashboardItem {
     display: inline-block;
+    margin: 0 50px 50px 50px;
+}
+
+.dashboard-images {
+    height: 300px;
 }
 
 a{
@@ -51,19 +60,48 @@ a:link {
 
 a:hover {
     color: rgb(255, 151, 151);
-  }
+ }
+
+
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 15px;
-    max-width: 100vh;
-    overflow-x: visible;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;    
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .galleryItems {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.wishlist-images {
+    height: 250px;
+}
+
+nav {
+    text-align: left;
+    list-style: none;
+}
+
+.topLinks {
+    display:inline;
+    margin-right: 20px;
+}
+
+
+.dashboard-titles {
+    width: 200px;
+    word-wrap: break-word;
+}
+
+#log-out {
+    text-align: right;
+
 }

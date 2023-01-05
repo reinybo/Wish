@@ -10,21 +10,25 @@
     <title>Wish Index</title>
 </head>
 <body>
-    <h1>All items</h1>
-    <ul>
-        <li>
-            <a href="/">home</a>
-        </li>
-        <li>
-            <a href="/product/new">Add a new item!</a>
-        </li>
-    </ul>
-    <ul>
-        <% for(let i = 0; i < products.length; i++){ %>
-            <li>
-                <a href="/product/<%= products[i]._id %>"><%= products[i].title %></a>
+    <nav>
+        <ul>
+            <li class="topLinks">
+                <a href="/">Dashboard</a>
             </li>
+            <li class="topLinks">
+                <a href="/product/new">Add a new item!</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>All items</h1>
+    <div class="gallery">
+        <% for(let i = 0; i < products.length; i++){ %>
+            <div class='galleryItems'>
+                <h6><a href="/product/<%= products[i]._id %>"><%= products[i].title %></a></h6>
+                <a href="/product/<%= products[i]._id %> "><img class='wishlist-images' src="<%= products[i].imageLink %>" alt="product image"></a>
+            </div>
             <% } %>
-    </ul>
+    </div>
+
 </body>
 </html>

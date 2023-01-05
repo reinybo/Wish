@@ -13,10 +13,10 @@
     <header>
         <nav>
             <ul>
-                <li id="topLinks">
+                <li class="topLinks">
                     <a href="/">Home</a>
                 </li>
-                <li id="topLinks">
+                <li class="topLinks">
                     <a href="/product">Item Index</a>
                 </li>
             </ul>
@@ -27,6 +27,7 @@
         <form action="/product" method="POST">
             Link to item: <input type="url" name="link"> <br>
             Item title: <input type="text" name="title"> <br>
+            Price: $<input type="number" step='any' name="price"> <br>
             Store: <input type="text" name="store"> <br>
             Image Link: <input type="url" name="imageLink"> <br>
             Tags: <input type="text" name="tags"> <br>
@@ -38,12 +39,6 @@
 </body>
 
 
-<datalist id="wishLists">
-    <option value="Edge">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-</datalist>
+<datalist id="wishLists"></datalist>
 
 </html>

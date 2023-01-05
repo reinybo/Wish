@@ -8,7 +8,8 @@ const productSchema = new Schema({
     store: String,
     imageLink: String,
     tags: [],
-    wishList: String
+    wishList: String,
+    price: Number
 }, {timestamps: true});
 
 const Product = mongoose.model('Product', productSchema);

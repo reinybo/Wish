@@ -12,7 +12,6 @@
 </head>
 
 <body>
-	<%- include('../partials/nav.ejs')  %>
 	<h1>Login</h1>
 	<form action='/sessions' method='POST'>
 		<label for="email">Email:</label>
@@ -21,7 +20,8 @@
 		<label for="password">Password:</label>
 		<input type="password" name="password" id="password" />
 
-		<input type="submit" value="Login">
+		<input type="submit" value="Login"> <br>
+        <a href="/users/new">Or click here to register</a>
 	</form>
 </body>
 

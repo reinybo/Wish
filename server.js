@@ -43,13 +43,6 @@ app.use('/sessions', sessionsController);
 const productController = require('./controllers/products');
 app.use('/product', productController);
 
-const wishlistController = require('./controllers/wishlist');
-app.use('/wishlist', wishlistController);
-
-
-
-
-
 
 
 app.get('/', (req, res) => {
@@ -60,7 +53,7 @@ app.get('/', (req, res) => {
 			    currentUser: req.session.currentUser
         })});
 	} else {
-		res.render('index.ejs', {
+		res.render('sessions/new.ejs', {
 			currentUser: req.session.currentUser
 		});
 	}
