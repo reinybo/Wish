@@ -34,7 +34,7 @@ To launch Wishlist click [here:](https://reinys-wish.herokuapp.com/)
 
 ## Future Enhancements 
 
-In the future, there are a few features I would like to add. Firstly, I would like to be able to filter/sort the items by price, tag, store, etc.. Additionally, I would like the user to input the link to the item which will trigger the other inputs to auto-populate with likely values retreived from the given link. I also want the user to be notified of pricedrops of items on their wishlists, and lastly, I would like their to be a space for suggesting items that the user might also like. 
+In the future, there are a few features I would like to add. Firstly, I would like to be able to filter/sort the items by price, tag, store, etc.. Additionally, I would like the user to input the link to the item which will trigger the other inputs to auto-populate with likely values retreived from the given link. I also want the user to be notified of pricedrops of items on their wishlists, and lastly, I would like to improve the mobile-browsing experience. 
 
 
 
