@@ -27,12 +27,12 @@
     <main>
         <section>
             <ul>
-                <li>Link: <%= product.link %></li>
+                <li>Link: <a href="<%=product.link%>"><%=product.link%></a></li>
                 <li>Store: <%= product.store %></li>
                 <li>Price: $<%= product.price %></li>
                 <li>Tags: <%= product.tags %></li>
                 <li>Wishlist: <%= product.wishList %></li>
-                <img src="<%= product.imageLink%>" alt="product image">
+                <img class='product-show-image' src="<%= product.imageLink%>" alt="product image">
             </ul>
         </section>
         <section>
