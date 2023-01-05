@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="/normalize.css" />
     <link rel="stylesheet" href="/skeleton.css" />
     <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/d4c0810681.js" crossorigin="anonymous"></script>
     <title>Wish Index</title>
 </head>
 <body>
     <nav>
         <ul>
             <li class="topLinks">
+                <i class="fa-solid fa-cloud fa-1x"></i>
                 <a href="/">Dashboard</a>
             </li>
             <li class="topLinks">
@@ -21,6 +23,7 @@
         </ul>
     </nav>
     <h1>All items</h1>
+
     <div class="gallery">
         <% for(let i = 0; i < products.length; i++){ %>
             <div class='galleryItems'>

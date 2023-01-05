@@ -13,8 +13,11 @@
 <body>
     <nav>
         <ul>
-            <li>
+            <li class="topLinks">
                 <a href="/">Dashbaord</a>
+            </li>
+            <li class="topLinks">
+                <a href="/product/new">Add New Product</a>
             </li>
         </ul>
     </nav>
@@ -26,6 +29,8 @@
             <div class='galleryItems'>
                 <h6><a href="/product/<%= p._id %>"><%= p.title %></a></h6>
                 <a href="/product/<%= p._id %> "><img class='wishlist-images' src="<%= p.imageLink %>" alt="product image"></a>
+                <br>
+                <h6>$ <%= p.price %> </h6>
             </div>
         <% }) %> 
     </div>  

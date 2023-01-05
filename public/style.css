@@ -10,6 +10,14 @@ body {
     text-align: center;
 }
 
+i {
+    color:white;
+}
+
+.linkCloud {
+    height: 20px;
+}
+
 h1 {
     font-family: 'Abril Fatface', cursive;
 }
@@ -92,7 +100,7 @@ nav {
 
 .topLinks {
     display:inline;
-    margin-right: 20px;
+    margin-left: 10px;
 }
 
 

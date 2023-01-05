@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/normalize.css" />
     <link rel="stylesheet" href="/skeleton.css" />
     <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/d4c0810681.js" crossorigin="anonymous"></script>
     <title>Wish</title>
 </head>
 
@@ -12,8 +13,12 @@
     <header>
         <nav>
             <ul>
-                <li>
-                    <a href="/">Home</a>
+                <li class="topLinks">
+                    <i class="fa-solid fa-cloud fa-1x"></i>
+                    <a href="/">Dashboard</a>
+                </li>
+                <li class="topLinks">
+                    <a href="/product/wishlist/<%=product.wishList%>"> <%=product.wishList%> wishlist</a>
                 </li>
             </ul>
         </nav>
@@ -24,17 +29,17 @@
             <ul>
                 <li>Link: <%= product.link %></li>
                 <li>Store: <%= product.store %></li>
-                <li>Price: <%= product.price %></li>
-                <li>tags: <%= product.tags %></li>
-                <li>wishlist: <%= product.wishList %></li>
+                <li>Price: $<%= product.price %></li>
+                <li>Tags: <%= product.tags %></li>
+                <li>Wishlist: <%= product.wishList %></li>
                 <img src="<%= product.imageLink%>" alt="product image">
             </ul>
         </section>
         <section>
+            <a href="/product/<%= product._id %>/edit">Edit</a><br><br>
             <form action="/product/<%= product._id %>?_method=DELETE" method="POST">
                 <input type="submit" value="Delete Product" />
             </form>
-            <a href="/product/<%= product._id %>/edit">Edit</a>
         </section>
     </main>
 </body>
