@@ -9,7 +9,8 @@ const productSchema = new Schema({
     imageLink: String,
     tags: [],
     wishList: String,
-    price: Number
+    price: Number,
+    user: String
 }, {timestamps: true});
 
 const Product = mongoose.model('Product', productSchema);

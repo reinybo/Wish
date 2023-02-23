@@ -109,3 +109,20 @@ nav {
     text-align: right;
 
 }
+
+@media screen and (max-width: 1050px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        display:block;
+        overflow-x:visible;
+    }
+    .galleryItems {
+        display: block;
+    }
+}
